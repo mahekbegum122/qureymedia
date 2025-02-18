@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: scroll;
+            /* flex-direction: row; */
+            gap: 10px;
+        }
+        .box1{
+            width: 300px;
+                height: 450px;
+                background-image: url(image2.jpg);
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: 10px 0 20px black;
+                background-color: black;
+                margin: 10px;
+                padding: 10px;
+        }
+        .box2{
+                width: 300px;
+                height: 450px;
+                background-image: url(image1.jpg);
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: 10px 0 20px black;
+                background-color: black;
+                margin: 10px;
+                padding: 10px;
+            }
+            .box3{
+                width: 300px;
+                height: 450px;
+                background-image: url(image3.jpg);
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: 10px 0 20px black;
+                background-color: black;
+                margin: 10px;
+                padding: 10px;
+                /* min-width: 200px;
+                min-height: 200px; */
+            }
+            .box4{
+                width: 300px;
+                height: 450px;
+                background-image: url(image4.jpg);
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: 10px 0 20px black;
+                margin: 10px;
+                padding: 10px;
+            }
+        
+      .heading1{
+            color: black;
+            font-size: 30px;
+            text-shadow: 0 0 grey;
+            padding: 5px;
+        }
+        .heading2{
+            color: white;
+            font-size: 30px;
+            text-shadow: 0 rgba(117, 116, 116, 0.712);
+            padding: 5px;
+        }
+
+        /* sub1{
+            color: black;
+            text-shadow: 0 0 10px white;
+            padding: 5px;
+
+        } */
+    
+
+        sub1{
+            color: black;
+            text-shadow: 0 0 10px white;
+            padding: 5px;
+        }
+        @media(max-width: 1000px){
+            .container{
+                flex-direction: column;
+                align-items: center;
+            } 
+        }
+        .btn {
+            background-color:rgba(0, 0, 0, 0.815);
+            color: white;
+            outline: none;
+            font-size: 12px;
+            background-size: 3px;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1 class="heading1">Santorini,Greece</h1>
+            <p class="sub1">White-washed house,sunset views .</p>
+            <div class="a">
+                <button class="btn">View More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="box3">
+            <h1 class="heading1">Swiss,Switzaland</h1>
+            <p class="sub1">Skiing alpine luxury</p>
+            <div class="a">
+                <button class="btn">View More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="box4">
+            <h1 class="heading1">Bali,Indonesia</h1>
+            <p class="sub1">Beaches,nightlif</p>
+       <div class="a">
+            <button class="btn">View More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        </div>
+            <div class="box2">
+                <h1 class="heading2">New York,USA</h1>
+                <p class="sub1" style="color: aliceblue";>Iconic landmarks,vibrant energy</p>
+                <div class="a">
+                    <button class="btn">View More <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
